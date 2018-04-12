@@ -1,0 +1,48 @@
+     Permit.Number     Permit.Type                         Permit.Type.Definition Permit.Creation.Date     Block             Lot         Street.Number  Street.Number.Suffix     Street.Name    
+ 2.01709E+11:  3549   Min.   :1.000   otc alterations permit          :178844     09/15/2017:   413    3708   :  1195   1      : 10114   Min.   :   0          :196684       Market    :  5443  
+ 2.01708E+11:  3424   1st Qu.:8.000   additions alterations or repairs: 14663     11/03/2015:   396    3735   :   750   7      :  5317   1st Qu.: 235   A      :  1501       California:  4587  
+ 2.01406E+11:  3091   Median :8.000   sign - erect                    :  2892     02/17/2016:   363    7331   :   680   2      :  5183   Median : 710   B      :   291       Mission   :  4209  
+ 2.01603E+11:  2983   Mean   :7.522   new construction wood frame     :   950     09/14/2017:   335    289    :   640   3      :  5042   Mean   :1122   V      :   228       Montgomery:  2403  
+ 2.01503E+11:  2982   3rd Qu.:8.000   demolitions                     :   600     06/27/2014:   307    3709   :   584   6      :  4835   3rd Qu.:1700   C      :    56       Geary     :  1966  
+ 2.01706E+11:  2969   Max.   :8.000   wall or painted sign            :   511     03/30/2015:   298    3717   :   578   8      :  4773   Max.   :8400   E      :    28       20th      :  1859  
+ (Other)    :179902                   (Other)                         :   440     (Other)   :196788    (Other):194473   (Other):163636                  (Other):   112       (Other)   :178433  
+ Street.Suffix         Unit          Unit.Suffix                  Description       Current.Status  Current.Status.Date      Filed.Date         Issued.Date        Completed.Date  
+ St     :138358   Min.   :   0.00          :196939   street space       : 22163   complete :97077   09/15/2017:   474   09/15/2017:   412             : 14940             :101709  
+ Av     : 43219   1st Qu.:   0.00   A      :   346   reroofing          :  9465   issued   :83559   09/14/2017:   404   11/03/2015:   366   06/15/2016:   341   10/30/2015:   206  
+ Bl     :  3555   Median :   0.00   C      :   226   street space permit:  7549   filed    :12043   06/15/2016:   370   02/17/2016:   364   07/26/2016:   274   01/02/2014:   169  
+ Wy     :  3540   Mean   :  78.52   B      :   191   re-roofing         :  2351   withdrawn: 1754   02/22/2018:   364   09/14/2017:   332   12/18/2015:   272   12/20/2017:   162  
+ Dr     :  3267   3rd Qu.:   1.00   D      :   135   streetspace        :   819   cancelled: 1536   02/23/2018:   363   06/27/2014:   305   12/10/2015:   234   11/26/2013:   161  
+        :  2768   Max.   :6004.00   E      :    92   reroofing.         :   722   expired  : 1370   02/15/2018:   343   09/13/2017:   301   11/07/2017:   233   10/10/2017:   160  
+ (Other):  4193   NA's   :169421    (Other):   971   (Other)            :155831   (Other)  : 1561   (Other)   :196582   (Other)   :196820   (Other)   :182606   (Other)   : 96333  
+ First.Construction.Document.Date Structural.Notification Number.of.Existing.Stories Number.of.Proposed.Stories Voluntary.Soft.Story.Retrofit Fire.Only.Permit Permit.Expiration.Date
+           : 14946                 :191978                Min.   : 0.00              Min.   : 0.00               :198865                       :180073                   : 51880     
+ 11/07/2016:   339                Y:  6922                1st Qu.: 2.00              1st Qu.: 2.00              Y:    35                      Y: 18827         02/28/2018:   302     
+ 11/01/2016:   254                                        Median : 3.00              Median : 3.00                                                             02/24/2018:   239     
+ 12/10/2015:   236                                        Mean   : 5.71              Mean   : 5.75                                                             05/31/2018:   234     
+ 11/07/2017:   235                                        3rd Qu.: 4.00              3rd Qu.: 4.00                                                             05/04/2018:   228     
+ 10/11/2017:   233                                        Max.   :78.00              Max.   :78.00                                                             06/21/2018:   228     
+ (Other)   :182657                                        NA's   :42784              NA's   :42868                                                             (Other)   :145789     
+ Estimated.Cost      Revised.Cost                  Existing.Use   Existing.Units               Proposed.Use   Proposed.Units       Plansets       TIDF.Compliance Existing.Construction.Type
+ Min.   :1.00e+00   Min.   :        0   1 family dwelling:46766   Min.   :   0.00   1 family dwelling:46346   Min.   :   0.00   Min.   :   0.00    :198898        Min.   :1.00              
+ 1st Qu.:3.30e+03   1st Qu.:        1                    :41114   1st Qu.:   1.00   apartments       :43032   1st Qu.:   1.00   1st Qu.:   0.00   P:     1        1st Qu.:3.00              
+ Median :1.10e+04   Median :     7000   apartments       :40798   Median :   1.00                    :42439   Median :   2.00   Median :   2.00   Y:     1        Median :5.00              
+ Mean   :1.69e+05   Mean   :   132856   office           :24616   Mean   :  15.67   office           :23962   Mean   :  16.51   Mean   :   1.27                   Mean   :4.07              
+ 3rd Qu.:3.50e+04   3rd Qu.:    28708   2 family dwelling:20987   3rd Qu.:   4.00   2 family dwelling:22061   3rd Qu.:   4.00   3rd Qu.:   2.00                   3rd Qu.:5.00              
+ Max.   :5.38e+08   Max.   :780500000   retail sales     : 6910   Max.   :1907.00   retail sales     : 5079   Max.   :1911.00   Max.   :9000.00                   Max.   :5.00              
+ NA's   :38066      NA's   :6066        (Other)          :17709   NA's   :51538     (Other)          :15981   NA's   :50911     NA's   :37309                     NA's   :43366             
+ Existing.Construction.Type.Description Proposed.Construction.Type Proposed.Construction.Type.Description Site.Permit Supervisor.District             Neighborhoods...Analysis.Boundaries
+               : 43366                  Min.   :1.00                             : 43162                   :193541    Min.   : 1.000      Financial District/South Beach: 21816          
+ constr type 1 : 28072                  1st Qu.:3.00               constr type 1 : 27841                  Y:  5359    1st Qu.: 3.000      Mission                       : 14681          
+ constr type 2 :  4068                  Median :5.00               constr type 2 :  3778                              Median : 6.000      Sunset/Parkside               : 10207          
+ constr type 3 :  9663                  Mean   :4.09               constr type 3 :  9360                              Mean   : 5.538      West of Twin Peaks            :  8739          
+ constr type 4 :   381                  3rd Qu.:5.00               constr type 4 :   377                              3rd Qu.: 8.000      Castro/Upper Market           :  8527          
+ wood frame (5):113350                  Max.   :5.00               wood frame (5):114382                              Max.   :11.000      Pacific Heights               :  8508          
+                                        NA's   :43162                                                                 NA's   :1717        (Other)                       :126422          
+    Zipcode                                           Location        Record.ID        
+ Min.   :94102                                            :  1700   Min.   :1.294e+10  
+ 1st Qu.:94109   (37.79226164705184, -122.4034859571375)  :   554   1st Qu.:1.309e+12  
+ Median :94114   (37.79294896659241, -122.39809861435491) :   330   Median :1.372e+12  
+ Mean   :94116   (37.728556952954136, -122.47676641508518):   281   Mean   :1.162e+12  
+ 3rd Qu.:94122   (37.77523036414975, -122.4174703200545)  :   276   3rd Qu.:1.435e+12  
+ Max.   :94158   (37.78977799888473, -122.40173648131338) :   252   Max.   :1.498e+12  
+ NA's   :1716    (Other)                                  :195507                      
