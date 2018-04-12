@@ -1,48 +1,232 @@
-     Permit.Number     Permit.Type                         Permit.Type.Definition Permit.Creation.Date     Block             Lot         Street.Number  Street.Number.Suffix     Street.Name    
- 2.01709E+11:  3549   Min.   :1.000   otc alterations permit          :178844     09/15/2017:   413    3708   :  1195   1      : 10114   Min.   :   0          :196684       Market    :  5443  
- 2.01708E+11:  3424   1st Qu.:8.000   additions alterations or repairs: 14663     11/03/2015:   396    3735   :   750   7      :  5317   1st Qu.: 235   A      :  1501       California:  4587  
- 2.01406E+11:  3091   Median :8.000   sign - erect                    :  2892     02/17/2016:   363    7331   :   680   2      :  5183   Median : 710   B      :   291       Mission   :  4209  
- 2.01603E+11:  2983   Mean   :7.522   new construction wood frame     :   950     09/14/2017:   335    289    :   640   3      :  5042   Mean   :1122   V      :   228       Montgomery:  2403  
- 2.01503E+11:  2982   3rd Qu.:8.000   demolitions                     :   600     06/27/2014:   307    3709   :   584   6      :  4835   3rd Qu.:1700   C      :    56       Geary     :  1966  
- 2.01706E+11:  2969   Max.   :8.000   wall or painted sign            :   511     03/30/2015:   298    3717   :   578   8      :  4773   Max.   :8400   E      :    28       20th      :  1859  
- (Other)    :179902                   (Other)                         :   440     (Other)   :196788    (Other):194473   (Other):163636                  (Other):   112       (Other)   :178433  
- Street.Suffix         Unit          Unit.Suffix                  Description       Current.Status  Current.Status.Date      Filed.Date         Issued.Date        Completed.Date  
- St     :138358   Min.   :   0.00          :196939   street space       : 22163   complete :97077   09/15/2017:   474   09/15/2017:   412             : 14940             :101709  
- Av     : 43219   1st Qu.:   0.00   A      :   346   reroofing          :  9465   issued   :83559   09/14/2017:   404   11/03/2015:   366   06/15/2016:   341   10/30/2015:   206  
- Bl     :  3555   Median :   0.00   C      :   226   street space permit:  7549   filed    :12043   06/15/2016:   370   02/17/2016:   364   07/26/2016:   274   01/02/2014:   169  
- Wy     :  3540   Mean   :  78.52   B      :   191   re-roofing         :  2351   withdrawn: 1754   02/22/2018:   364   09/14/2017:   332   12/18/2015:   272   12/20/2017:   162  
- Dr     :  3267   3rd Qu.:   1.00   D      :   135   streetspace        :   819   cancelled: 1536   02/23/2018:   363   06/27/2014:   305   12/10/2015:   234   11/26/2013:   161  
-        :  2768   Max.   :6004.00   E      :    92   reroofing.         :   722   expired  : 1370   02/15/2018:   343   09/13/2017:   301   11/07/2017:   233   10/10/2017:   160  
- (Other):  4193   NA's   :169421    (Other):   971   (Other)            :155831   (Other)  : 1561   (Other)   :196582   (Other)   :196820   (Other)   :182606   (Other)   : 96333  
- First.Construction.Document.Date Structural.Notification Number.of.Existing.Stories Number.of.Proposed.Stories Voluntary.Soft.Story.Retrofit Fire.Only.Permit Permit.Expiration.Date
-           : 14946                 :191978                Min.   : 0.00              Min.   : 0.00               :198865                       :180073                   : 51880     
- 11/07/2016:   339                Y:  6922                1st Qu.: 2.00              1st Qu.: 2.00              Y:    35                      Y: 18827         02/28/2018:   302     
- 11/01/2016:   254                                        Median : 3.00              Median : 3.00                                                             02/24/2018:   239     
- 12/10/2015:   236                                        Mean   : 5.71              Mean   : 5.75                                                             05/31/2018:   234     
- 11/07/2017:   235                                        3rd Qu.: 4.00              3rd Qu.: 4.00                                                             05/04/2018:   228     
- 10/11/2017:   233                                        Max.   :78.00              Max.   :78.00                                                             06/21/2018:   228     
- (Other)   :182657                                        NA's   :42784              NA's   :42868                                                             (Other)   :145789     
- Estimated.Cost      Revised.Cost                  Existing.Use   Existing.Units               Proposed.Use   Proposed.Units       Plansets       TIDF.Compliance Existing.Construction.Type
- Min.   :1.00e+00   Min.   :        0   1 family dwelling:46766   Min.   :   0.00   1 family dwelling:46346   Min.   :   0.00   Min.   :   0.00    :198898        Min.   :1.00              
- 1st Qu.:3.30e+03   1st Qu.:        1                    :41114   1st Qu.:   1.00   apartments       :43032   1st Qu.:   1.00   1st Qu.:   0.00   P:     1        1st Qu.:3.00              
- Median :1.10e+04   Median :     7000   apartments       :40798   Median :   1.00                    :42439   Median :   2.00   Median :   2.00   Y:     1        Median :5.00              
- Mean   :1.69e+05   Mean   :   132856   office           :24616   Mean   :  15.67   office           :23962   Mean   :  16.51   Mean   :   1.27                   Mean   :4.07              
- 3rd Qu.:3.50e+04   3rd Qu.:    28708   2 family dwelling:20987   3rd Qu.:   4.00   2 family dwelling:22061   3rd Qu.:   4.00   3rd Qu.:   2.00                   3rd Qu.:5.00              
- Max.   :5.38e+08   Max.   :780500000   retail sales     : 6910   Max.   :1907.00   retail sales     : 5079   Max.   :1911.00   Max.   :9000.00                   Max.   :5.00              
- NA's   :38066      NA's   :6066        (Other)          :17709   NA's   :51538     (Other)          :15981   NA's   :50911     NA's   :37309                     NA's   :43366             
- Existing.Construction.Type.Description Proposed.Construction.Type Proposed.Construction.Type.Description Site.Permit Supervisor.District             Neighborhoods...Analysis.Boundaries
-               : 43366                  Min.   :1.00                             : 43162                   :193541    Min.   : 1.000      Financial District/South Beach: 21816          
- constr type 1 : 28072                  1st Qu.:3.00               constr type 1 : 27841                  Y:  5359    1st Qu.: 3.000      Mission                       : 14681          
- constr type 2 :  4068                  Median :5.00               constr type 2 :  3778                              Median : 6.000      Sunset/Parkside               : 10207          
- constr type 3 :  9663                  Mean   :4.09               constr type 3 :  9360                              Mean   : 5.538      West of Twin Peaks            :  8739          
- constr type 4 :   381                  3rd Qu.:5.00               constr type 4 :   377                              3rd Qu.: 8.000      Castro/Upper Market           :  8527          
- wood frame (5):113350                  Max.   :5.00               wood frame (5):114382                              Max.   :11.000      Pacific Heights               :  8508          
-                                        NA's   :43162                                                                 NA's   :1717        (Other)                       :126422          
-    Zipcode                                           Location        Record.ID        
- Min.   :94102                                            :  1700   Min.   :1.294e+10  
- 1st Qu.:94109   (37.79226164705184, -122.4034859571375)  :   554   1st Qu.:1.309e+12  
- Median :94114   (37.79294896659241, -122.39809861435491) :   330   Median :1.372e+12  
- Mean   :94116   (37.728556952954136, -122.47676641508518):   281   Mean   :1.162e+12  
- 3rd Qu.:94122   (37.77523036414975, -122.4174703200545)  :   276   3rd Qu.:1.435e+12  
- Max.   :94158   (37.78977799888473, -122.40173648131338) :   252   Max.   :1.498e+12  
- NA's   :1716    (Other)                                  :195507                      
+      Date               GameID           Drive                qtr       
+ Min.   :     1   2016-01-03:  2872   Min.   :2.009e+09   Min.   : 1.00  
+ 1st Qu.:101923   2012-01-01:  2825   1st Qu.:2.011e+09   1st Qu.: 6.00  
+ Median :203845   2017-01-01:  2819   Median :2.013e+09   Median :12.00  
+ Mean   :203845   2017-12-31:  2801   Mean   :2.013e+09   Mean   :12.32  
+ 3rd Qu.:305766   2011-01-02:  2772   3rd Qu.:2.015e+09   3rd Qu.:18.00  
+ Max.   :407688   2014-12-28:  2771   Max.   :2.017e+09   Max.   :35.00  
+                  (Other)   :390828                                      
+      down            time         TimeUnder         TimeSecs     
+ Min.   :1.000   Min.   :0.000   15:00  : 11792   Min.   : 0.000  
+ 1st Qu.:2.000   1st Qu.:1.000   02:00  :  7012   1st Qu.: 3.000  
+ Median :3.000   Median :2.000   00:00  :  6914   Median : 7.000  
+ Mean   :2.577   Mean   :1.702   14:55  :  1174   Mean   : 7.374  
+ 3rd Qu.:4.000   3rd Qu.:3.000   01:55  :  1001   3rd Qu.:11.000  
+ Max.   :5.000   Max.   :4.000   14:54  :   980   Max.   :15.000  
+                                 (Other):378815                   
+  PlayTimeDiff   SideofField         yrdln          yrdline100   
+ Min.   :-900   Min.   :  0.00   OAK    : 13270   Min.   : 0.00  
+ 1st Qu.: 777   1st Qu.:  5.00   CLE    : 13212   1st Qu.:20.00  
+ Median :1800   Median : 17.00   BUF    : 13094   Median :30.00  
+ Mean   :1694   Mean   : 20.55   TEN    : 12968   Mean   :28.43  
+ 3rd Qu.:2584   3rd Qu.: 37.00   MIA    : 12924   3rd Qu.:39.00  
+ Max.   :3600   Max.   :943.00   NYG    : 12855   Max.   :50.00  
+                                 (Other):329365                  
+    ydstogo          ydsnet          GoalToGo        FirstDown      
+ Min.   : 0.00   Min.   : 0.000   Min.   :-87.00   Min.   :0.00000  
+ 1st Qu.:30.00   1st Qu.: 3.000   1st Qu.:  5.00   1st Qu.:0.00000  
+ Median :49.00   Median : 9.000   Median : 19.00   Median :0.00000  
+ Mean   :48.54   Mean   : 7.309   Mean   : 25.95   Mean   :0.04903  
+ 3rd Qu.:70.00   3rd Qu.:10.000   3rd Qu.: 43.00   3rd Qu.:0.00000  
+ Max.   :99.00   Max.   :50.000   Max.   : 99.00   Max.   :1.00000  
+                                                                    
+    posteam     DefensiveTeam         desc       
+ Min.   :0.00          : 24992   0      : 24992  
+ 1st Qu.:0.00   NE     : 12520   PHI    : 12321  
+ Median :0.00   NO     : 12408   TEN    : 12293  
+ Mean   :0.27   DEN    : 12398   BUF    : 12237  
+ 3rd Qu.:1.00   PHI    : 12397   ARI    : 12236  
+ Max.   :1.00   HOU    : 12315   CLE    : 12228  
+                (Other):320658   (Other):321381  
+                                                   PlayAttempted   
+ Two-Minute Warning                                       :  3739  
+ END GAME                                                 :  1913  
+ END QUARTER 3                                            :  1869  
+ END QUARTER 1                                            :  1570  
+ END QUARTER 2                                            :  1287  
+ G.Gano kicks 65 yards from CAR 35 to end zone, Touchback.:   320  
+ (Other)                                                  :396990  
+  Yards.Gained       sp            Touchdown       ExPointResult    
+ Min.   :1     Min.   :-74.000   Min.   :0.00000   Min.   :0.00000  
+ 1st Qu.:1     1st Qu.:  0.000   1st Qu.:0.00000   1st Qu.:0.00000  
+ Median :1     Median :  1.000   Median :0.00000   Median :0.00000  
+ Mean   :1     Mean   :  4.994   Mean   :0.07184   Mean   :0.02907  
+ 3rd Qu.:1     3rd Qu.:  7.000   3rd Qu.:0.00000   3rd Qu.:0.00000  
+ Max.   :1     Max.   : 99.000   Max.   :1.00000   Max.   :1.00000  
+                                                                    
+  TwoPointConv     DefTwoPoint         Safety         Onsidekick       
+ 0      :397578   0      :407083   0      :407664   Min.   :0.0000000  
+ Aborted:     7   Failure:   322   Failure:    19   1st Qu.:0.0000000  
+ Blocked:    81   Success:   283   Success:     5   Median :0.0000000  
+ Made   :  9850                                     Mean   :0.0003876  
+ Missed :   172                                     3rd Qu.:0.0000000  
+                                                    Max.   :1.0000000  
+                                                                       
+   PuntResult          PlayType          Passer           Passer_ID     
+ Min.   :0.000000   0      :385317   Pass   :159353   0        :240045  
+ 1st Qu.:0.000000   Blocked:   118   Run    :120831   D.Brees  :  5900  
+ Median :0.000000   Clean  : 22253   Kickoff: 23403   T.Brady  :  5480  
+ Mean   :0.001359                    Punt   : 22003   E.Manning:  5409  
+ 3rd Qu.:0.000000                    No Play: 21414   M.Ryan   :  5401  
+ Max.   :1.000000                    Timeout: 16206   P.Rivers :  5363  
+                                     (Other): 44478   (Other)  :140090  
+     PassAttempt      PassOutcome               PassLength    
+ None      :237445   Min.   :0.0000   0              :239506  
+ 00-0020531:  5906   1st Qu.:0.0000   Complete       :101278  
+ 00-0026143:  5420   Median :0.0000   Incomplete Pass: 66904  
+ 00-0019596:  5399   Mean   :0.4126                           
+ 00-0022942:  5367   3rd Qu.:1.0000                           
+ 00-0022803:  5353   Max.   :1.0000                           
+ (Other)   :142798                                            
+  AirYards      YardsAfterCatch       QBHit          PassLocation    
+ 0    :240520   Min.   :-70.000   Min.   :-81.000   Min.   :0.00000  
+ 20   :     1   1st Qu.:  0.000   1st Qu.:  0.000   1st Qu.:0.00000  
+ Deep : 32438   Median :  0.000   Median :  0.000   Median :0.00000  
+ Short:134729   Mean   :  3.264   Mean   :  1.253   Mean   :0.05308  
+                3rd Qu.:  4.000   3rd Qu.:  0.000   3rd Qu.:0.00000  
+                Max.   : 84.000   Max.   : 90.000   Max.   :1.00000  
+                                                                     
+ InterceptionThrown  Interceptor           Rusher            Rusher_ID     
+ 0     :240520      Min.   :0.0000   0        :403168   0         :287124  
+ left  : 60501      1st Qu.:0.0000   B.Grimes :    35   F.Gore    :  2256  
+ middle: 38992      Median :0.0000   A.Talib  :    33   L.McCoy   :  2162  
+ right : 67675      Mean   :0.0111   R.Sherman:    33   M.Forte   :  2002  
+                    3rd Qu.:0.0000   E.Weddle :    32   A.Peterson:  1973  
+                    Max.   :1.0000   R.Nelson :    32   C.Johnson :  1916  
+                                     (Other)  :  4355   (Other)   :110255  
+     RushAttempt      RunLocation        RunGap         Receiver     
+ None      :283654   Min.   :0.0000   0     :288178   0     :320260  
+ 00-0023500:  2288   1st Qu.:0.0000   left  : 43157   end   : 31265  
+ 00-0027029:  2186   Median :0.0000   middle: 32821   guard : 27074  
+ 00-0026184:  2039   Mean   :0.2964   right : 43532   tackle: 29089  
+ 00-0025394:  1975   3rd Qu.:1.0000                                  
+ 00-0026164:  1912   Max.   :1.0000                                  
+ (Other)   :113634                                                   
+       Receiver_ID          Reception       ReturnResult   
+ 0           :246127   None      :250328   Min.   :0.0000  
+ J.Jones     :  1725   00-0022921:  1333   1st Qu.:0.0000  
+ C.Johnson   :  1517   00-0024334:  1238   Median :0.0000  
+ L.Fitzgerald:  1368   00-0027793:  1104   Mean   :0.2484  
+ D.Thomas    :  1293   00-0025389:  1073   3rd Qu.:0.0000  
+ B.Marshall  :  1267   00-0027874:  1038   Max.   :1.0000  
+ (Other)     :154391   (Other)   :151574                   
+       Returner        BlockingPlayer          Tackler1     
+ 0         :389450   0        :382384   0          :407571  
+ Fair Catch:  5552   D.Sproles:   496   B.Braman   :     3  
+ Touchback : 11685   T.Ginn   :   487   D.Watson   :     3  
+ Touchdown :  1001   B.Tate   :   477   R.Jennings :     3  
+                     D.Hester :   410   A.Dixon    :     2  
+                     J.Cribbs :   395   C.Littleton:     2  
+                     (Other)  : 23039   (Other)    :   104  
+        Tackler2        FieldGoalResult   FieldGoalDistance
+ 0          :166134   0         :357953   0      :398629   
+ P.Posluszny:   901   D.Harris  :   237   Blocked:   205   
+ D.Johnson  :   864   L.Timmons :   217   Good   :  7582   
+ K.Dansby   :   826   D.Jackson :   207   No Good:  1272   
+ M.Jenkins  :   809   L.Fletcher:   192                    
+ D.Williams :   794   C.Greenway:   187                    
+ (Other)    :237360   (Other)   : 48695                    
+     Fumble         RecFumbTeam      RecFumbPlayer           Sack       
+ Min.   : 0.0000   Min.   :0.00000   0      :403315   0        :403315  
+ 1st Qu.: 0.0000   1st Qu.:0.00000   CHI    :   165   J.Peppers:    15  
+ Median : 0.0000   Median :0.00000   TB     :   161   M.Adams  :    15  
+ Mean   : 0.8223   Mean   :0.01416   NYG    :   159   D.Jackson:    14  
+ 3rd Qu.: 0.0000   3rd Qu.:0.00000   ARI    :   154   J.Watt   :    14  
+ Max.   :71.0000   Max.   :1.00000   JAC    :   147   M.Jenkins:    14  
+                                     (Other):  3587   (Other)  :  4301  
+ Challenge.Replay  ChalReplayResult   Accepted.Penalty  PenalizedTeam    
+ Min.   :0.00000   Min.   :0.000000   0       :404286   Min.   :0.00000  
+ 1st Qu.:0.00000   1st Qu.:0.000000   Reversed:  1416   1st Qu.:0.00000  
+ Median :0.00000   Median :0.000000   Upheld  :  1986   Median :0.00000  
+ Mean   :0.02719   Mean   :0.008372                     Mean   :0.07236  
+ 3rd Qu.:0.00000   3rd Qu.:0.000000                     3rd Qu.:0.00000  
+ Max.   :1.00000   Max.   :1.000000                     Max.   :1.00000  
+                                                                         
+  PenaltyType                    PenalizedPlayer      Penalty.Yards   
+ 0      :378189   0                      :391261   0         :379403  
+ OAK    :  1159   False Start            :  5284   A.Smith   :   154  
+ SEA    :  1080   Defensive Offside      :  1524   T.Williams:    96  
+ TB     :  1010   Defensive Holding      :  1490   M.Bennett :    89  
+ DET    :  1007   Delay of Game          :  1196   T.Smith   :    88  
+ PHI    :   990   Neutral Zone Infraction:   980   C.Johnson :    85  
+ (Other): 24253   (Other)                :  5953   (Other)   : 27773  
+  PosTeamScore      DefTeamScore      ScoreDiff      AbsScoreDiff    
+ Min.   : 0.0000   Min.   : 0.000   Min.   : 0.00   Min.   :-59.000  
+ 1st Qu.: 0.0000   1st Qu.: 0.000   1st Qu.: 0.00   1st Qu.: -7.000  
+ Median : 0.0000   Median : 7.000   Median : 9.00   Median :  0.000  
+ Mean   : 0.6137   Mean   : 9.528   Mean   :10.66   Mean   : -1.114  
+ 3rd Qu.: 0.0000   3rd Qu.:16.000   3rd Qu.:17.00   3rd Qu.:  4.000  
+ Max.   :66.0000   Max.   :61.000   Max.   :61.00   Max.   : 59.000  
+                                                                     
+    HomeTeam        AwayTeam      Timeout_Indicator  Timeout_Team    
+ Min.   : 0.00   NE     : 13165   PHI    : 13129    Min.   :0.00000  
+ 1st Qu.: 1.00   PHI    : 13123   DEN    : 13127    1st Qu.:0.00000  
+ Median : 6.00   DEN    : 13041   NO     : 13003    Median :0.00000  
+ Mean   : 7.27   BUF    : 12996   DET    : 12975    Mean   :0.04122  
+ 3rd Qu.:11.00   NO     : 12984   NE     : 12959    3rd Qu.:0.00000  
+ Max.   :59.00   BAL    : 12902   HOU    : 12939    Max.   :1.00000  
+                 (Other):329477   (Other):329556                     
+ posteam_timeouts_pre HomeTimeouts_Remaining_Pre AwayTimeouts_Remaining_Pre
+ None   :390885       Min.   :0.000              Min.   :-3.00             
+ NO     :   628       1st Qu.:2.000              1st Qu.: 2.00             
+ KC     :   580       Median :3.000              Median : 3.00             
+ CLE    :   573       Mean   :2.521              Mean   : 2.54             
+ SF     :   572       3rd Qu.:3.000              3rd Qu.: 3.00             
+ OAK    :   558       Max.   :3.000              Max.   : 3.00             
+ (Other): 13892                                                            
+ HomeTimeouts_Remaining_Post AwayTimeouts_Remaining_Post No_Score_Prob   
+ Min.   :-1.000              Min.   :-3.00               Min.   :-1.000  
+ 1st Qu.: 2.000              1st Qu.: 2.00               1st Qu.: 2.000  
+ Median : 3.000              Median : 3.00               Median : 3.000  
+ Mean   : 2.517              Mean   : 2.52               Mean   : 2.496  
+ 3rd Qu.: 3.000              3rd Qu.: 3.00               3rd Qu.: 3.000  
+ Max.   : 3.000              Max.   : 3.00               Max.   : 3.000  
+                                                                         
+ Opp_Field_Goal_Prob Opp_Safety_Prob   Opp_Touchdown_Prob  Field_Goal_Prob  
+ Min.   :0.000000    Min.   :0.00000   Min.   :0.0000000   Min.   :0.00000  
+ 1st Qu.:0.002782    1st Qu.:0.03455   1st Qu.:0.0001039   1st Qu.:0.03978  
+ Median :0.024723    Median :0.08303   Median :0.0009867   Median :0.12394  
+ Mean   :0.127761    Mean   :0.09457   Mean   :0.0024938   Mean   :0.13991  
+ 3rd Qu.:0.172350    3rd Qu.:0.14991   3rd Qu.:0.0038439   3rd Qu.:0.22637  
+ Max.   :1.000000    Max.   :0.36018   Max.   :0.0314611   Max.   :0.49687  
+                                                                            
+  Safety_Prob     Touchdown_Prob      ExPoint_Prob    TwoPoint_Prob    
+ Min.   :0.0000   Min.   :0.000000   Min.   :0.0000   Min.   :0.00000  
+ 1st Qu.:0.1523   1st Qu.:0.001880   1st Qu.:0.1910   1st Qu.:0.00000  
+ Median :0.2312   Median :0.002990   Median :0.3137   Median :0.00000  
+ Mean   :0.2438   Mean   :0.002632   Mean   :0.2958   Mean   :0.02407  
+ 3rd Qu.:0.3261   3rd Qu.:0.003581   3rd Qu.:0.4076   3rd Qu.:0.00000  
+ Max.   :0.9946   Max.   :0.015177   Max.   :0.9130   Max.   :0.99313  
+                                                                       
+     ExpPts               EPA              airEPA             yacEPA        
+ Min.   :0.0000000   Min.   :-3.8365   Min.   :-13.4941   Min.   :-12.8496  
+ 1st Qu.:0.0000000   1st Qu.: 0.3219   1st Qu.: -0.5983   1st Qu.:  0.0000  
+ Median :0.0000000   Median : 1.2564   Median :  0.0000   Median :  0.0000  
+ Mean   :0.0007027   Mean   : 1.5647   Mean   :  0.0191   Mean   :  0.2051  
+ 3rd Qu.:0.0000000   3rd Qu.: 2.8815   3rd Qu.:  0.5622   3rd Qu.:  0.0000  
+ Max.   :0.4735000   Max.   : 6.5009   Max.   :  9.5080   Max.   :  7.3470  
+                                                                            
+  Home_WP_pre        Away_WP_pre      Home_WP_post     Away_WP_post   
+ Min.   :-14.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:  0.0000   1st Qu.:0.2627   1st Qu.:0.1743   1st Qu.:0.2549  
+ Median :  0.0000   Median :0.5114   Median :0.4440   Median :0.5107  
+ Mean   : -0.1508   Mean   :0.5018   Mean   :0.4374   Mean   :0.4999  
+ 3rd Qu.:  0.0000   3rd Qu.:0.7491   3rd Qu.:0.6529   3rd Qu.:0.7512  
+ Max.   :  9.5598   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+                                                                      
+    Win_Prob           WPA             airWPA             yacWPA         
+ Min.   :0.0000   Min.   :0.0000   Min.   :-0.99721   Min.   :-0.999881  
+ 1st Qu.:0.1676   1st Qu.:0.2122   1st Qu.:-0.01444   1st Qu.: 0.000000  
+ Median :0.4395   Median :0.4857   Median : 0.00000   Median : 0.000000  
+ Mean   :0.4352   Mean   :0.4706   Mean   : 0.00207   Mean   : 0.005909  
+ 3rd Qu.:0.6547   3rd Qu.:0.7073   3rd Qu.: 0.01424   3rd Qu.: 0.000000  
+ Max.   :1.0000   Max.   :1.0000   Max.   : 0.99485   Max.   : 0.994848  
+                                                                         
+     Season                NA      
+ Min.   :-0.986673   Min.   :2009  
+ 1st Qu.: 0.000000   1st Qu.:2011  
+ Median : 0.000000   Median :2013  
+ Mean   :-0.004085   Mean   :2013  
+ 3rd Qu.: 0.000000   3rd Qu.:2015  
+ Max.   : 1.000000   Max.   :2017  
+                                   
