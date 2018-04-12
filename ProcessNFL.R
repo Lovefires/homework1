@@ -1,23 +1,23 @@
 # install.package("DMwR")
 library("DMwR")
 
-#¶¨Î»µ½ÏîÄ¿ËùÔÚµÄÂ·¾¶
+#å®šä½åˆ°é¡¹ç›®æ‰€åœ¨çš„è·¯å¾„
 setwd("C://Users//Meggie//Desktop//NFL Play by Play")
 
-#¶ÁÈ¡Êı¾İ
+#è¯»å–æ•°æ®
 data <- read.csv("NFL Play by Play 2009-2017 (v4)_Correalation.csv", header = T, sep = ",")
-# ÁĞµÄÊôĞÔÃû
+# åˆ—çš„å±æ€§å
 colnames(data) <- c('Date','GameID','Drive','qtr','down','time','TimeUnder','TimeSecs','PlayTimeDiff','SideofField','yrdln','yrdline100','ydstogo','ydsnet','GoalToGo','FirstDown','posteam','DefensiveTeam','desc','PlayAttempted','Yards.Gained','sp','Touchdown','ExPointResult','TwoPointConv','DefTwoPoint','Safety','Onsidekick','PuntResult','PlayType','Passer','Passer_ID','PassAttempt','PassOutcome','PassLength','AirYards','YardsAfterCatch','QBHit','PassLocation','InterceptionThrown','Interceptor','Rusher','Rusher_ID','RushAttempt','RunLocation','RunGap','Receiver','Receiver_ID','Reception','ReturnResult','Returner','BlockingPlayer','Tackler1','Tackler2','FieldGoalResult','FieldGoalDistance','Fumble', 'RecFumbTeam','RecFumbPlayer','Sack','Challenge.Replay','ChalReplayResult','Accepted.Penalty','PenalizedTeam','PenaltyType','PenalizedPlayer','Penalty.Yards','PosTeamScore','DefTeamScore','ScoreDiff','AbsScoreDiff','HomeTeam','AwayTeam','Timeout_Indicator','Timeout_Team','posteam_timeouts_pre','HomeTimeouts_Remaining_Pre','AwayTimeouts_Remaining_Pre','HomeTimeouts_Remaining_Post','AwayTimeouts_Remaining_Post','No_Score_Prob','Opp_Field_Goal_Prob','Opp_Safety_Prob','Opp_Touchdown_Prob','Field_Goal_Prob','Safety_Prob','Touchdown_Prob','ExPoint_Prob','TwoPoint_Prob','ExpPts','EPA','airEPA',' yacEPA','Home_WP_pre','Away_WP_pre','Home_WP_post','Away_WP_post','Win_Prob','WPA','airWPA','yacWPA','Season')
 
 ###################################
-#·ÖÎöÊı¾İÕªÒª
+#åˆ†ææ•°æ®æ‘˜è¦
 ###################################
 sink("Summary.txt")
 summary(data)
 sink()
 
 ###################################
-#»­Ö±·½Í¼£¬QQÍ¼ºÍºĞÍ¼
+#ç”»ç›´æ–¹å›¾ï¼ŒQQå›¾å’Œç›’å›¾
 ###################################
 value_attr <- c('TimeUnder','TimeSecs','PlayTimeDiff','yrdln','yrdline100','ydsnet','Yards.Gained','AirYards','YardsAfterCatch','Penalty.Yards','PosTeamScore','DefTeamScore','ScoreDiff','posteam_timeouts_pre','HomeTimeouts_Remaining_Pre','AwayTimeouts_Remaining_Pre','HomeTimeouts_Remaining_Post','AwayTimeouts_Remaining_Post','No_Score_Prob','Opp_Field_Goal_Prob','Opp_Safety_Prob','Opp_Touchdown_Prob','Field_Goal_Prob','Safety_Prob','Touchdown_Prob','ExPoint_Prob','TwoPoint_Prob','ExpPts','EPA','airEPA',' yacEPA','Home_WP_pre','Away_WP_pre','Home_WP_post','Away_WP_post','Win_Prob','WPA','airWPA','yacWPA')
 
@@ -26,7 +26,7 @@ library(car)
 # Hist, QQ and Box of 'Date '
 for (i in 1:102)
 {
-	a <- data[,i+1]
+	a <- data[,i]
 	attr <- colnames(data[i]) 
 	if (attr %in% value_attr)
 	{
@@ -49,20 +49,20 @@ for (i in 1:102)
 
 
 ###################################
-#ÓÃËÄÕÅ·½·¨´¦ÀíÈ·ÊµÊı¾İ
+#ç”¨å››å¼ æ–¹æ³•å¤„ç†ç¡®å®æ•°æ®
 ###################################
 # 0. Save Original Data
 write.csv(data, file = "NFL Play by Play 2009-2017 (v4)_Original.csv", na = "XXXXXXX")
 
-# 1. É¾³ı
+# 1. åˆ é™¤
 data_delete <- na.omit(data)
 write.csv(data_delete, file = "NFL Play by Play 2009-2017 (v4)_Delete.csv", na = "XXXXXXX")
 
-# 2. ×î´óÆµÊı
+# 2. æœ€å¤§é¢‘æ•°
 data_most <- centralImputation(data)
 write.csv(data_most, file = "NFL Play by Play 2009-2017 (v4)_Frequency.csv", na = "XXXXXXX")
 
-# 3. ÊôĞÔÏà¹ØĞÔ
+# 3. å±æ€§ç›¸å…³æ€§
 data_cor <- data
 symnum(cor(data[,76:102], use="complete.obs"))
 #'posteam_timeouts_pre','HomeTimeouts_Remaining_Pre','AwayTimeouts_Remaining_Pre',
@@ -72,7 +72,7 @@ symnum(cor(data[,76:102], use="complete.obs"))
 #'Home_WP_post','Away_WP_post','Win_Prob','WPA','airWPA','yacWPA')
 
 lm(Home_WP_post ~ Away_WP_post , data = data)
-# ¾­ÑéÖ¤£¬¡°Home_WP_post¡±ºÍ¡°Away_WP_post¡±µÄÏà¹Ø¹ØÏµÎª£º
+# ç»éªŒè¯ï¼Œâ€œHome_WP_postâ€å’Œâ€œAway_WP_postâ€çš„ç›¸å…³å…³ç³»ä¸ºï¼š
 # Home_WP_post = 0.9992 + -0.9973*  Away_WP_post
 fillHome_WP_post <- function(Away_WP_post){
   if(is.na(Away_WP_post))
@@ -83,7 +83,7 @@ data_cor[is.na(data_cor$Home_WP_post),'Home_WP_post']<-
   sapply(data_cor[is.na(data_cor$Home_WP_post),'Away_WP_post'],fillHome_WP_post)
 write.csv(data_cor,file = "NFL Play by Play 2009-2017 (v4)_Correalation.csv", na = "0")
 
-# 4. Êı¾İ¶ÔÏóÏàËÆĞÔ
+# 4. æ•°æ®å¯¹è±¡ç›¸ä¼¼æ€§
 data_similar <- data[-manyNAs(data),]
 data_similar = knnImputation(data,k=10)
 write.csv(data_similar,file = "NFL Play by Play 2009-2017 (v4)_Similarity.csv", na = "0")
